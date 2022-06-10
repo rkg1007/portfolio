@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import SideBar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <SideBar />
         </div>
         <div className="col-span-12 bg-white rounded-lg lg:col-span-9">
+          <Navbar />
           <Component {...pageProps} />
         </div>
       </div>
